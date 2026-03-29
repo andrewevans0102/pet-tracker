@@ -1,0 +1,30 @@
+# Secrets - never commit these
+k8s/postgres-secret.yaml
+.env
+.env.*
+*.key
+*.pem
+*.crt
+*.p12
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker image tarballs
+*.tar
+
+# Editor
+.vscode/
+.idea/

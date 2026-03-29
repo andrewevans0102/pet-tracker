@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pet-tracker-backend
+  namespace: pet-tracker
+spec:
+  selector:
+    app: pet-tracker-backend
+  ports:
+    - port: 3000
+      targetPort: 3000
+  type: ClusterIP

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(systemctl is-active:*)",
+      "Bash(find /home/andrewevans/Documents/projects/pet-tracker -type f -name .env* -o -name config.* -o -name settings.* -o -name *.json -o -name *.yaml -o -name *.yml -o -name *.toml -o -name *.ini)",
+      "WebSearch",
+      "WebFetch(domain:marketplace.visualstudio.com)"
+    ]
+  }
+}

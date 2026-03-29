@@ -1,0 +1,134 @@
+.pet-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 2px solid var(--border);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.15s;
+}
+
+.pet-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.pet-card--ok {
+  border-top: 4px solid var(--green);
+}
+
+.pet-card--soon {
+  border-top: 4px solid var(--yellow);
+}
+
+.pet-card--overdue {
+  border-top: 4px solid var(--red);
+}
+
+.pet-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1rem 0.5rem;
+}
+
+.pet-emoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.pet-info {
+  flex: 1;
+}
+
+.pet-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.pet-species {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: capitalize;
+}
+
+.status-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.status-badge--ok {
+  background: #d1e7dd;
+  color: #0a3622;
+}
+
+.status-badge--soon {
+  background: #fff3cd;
+  color: #664d03;
+}
+
+.status-badge--overdue {
+  background: #f8d7da;
+  color: #58151c;
+}
+
+.pet-card-body {
+  padding: 0.75rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.last-fed {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.last-fed-label {
+  color: var(--text-muted);
+}
+
+.last-fed-time {
+  font-weight: 600;
+}
+
+.last-fed-member {
+  color: var(--primary);
+  font-size: 0.85rem;
+}
+
+.last-fed.never {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.interval-info {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.activity-badge {
+  margin-left: auto;
+  font-size: 0.65rem;
+}
+
+.activity-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.activity-buttons .feed-btn {
+  width: auto;
+  flex: 1 1 auto;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+}
